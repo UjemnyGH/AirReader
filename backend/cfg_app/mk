@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ -Os -Ofast -m64 -std=c++2b -Wall -Wextra -Wpedantic -o cfgApp src/*.c src/*.cpp -I vendor_lin/include -lGL -lglfw -lpthread -lm
+x86_64-w64-mingw32-g++ -static -Os -Ofast -m64 -std=c++2b -Wall -Wextra -Wpedantic -o cfgApp src/*.c src/*.cpp -I vendor_win/include -L vendor_win/lib -lopengl32 -lglfw3 -lpthread -lm -luser32 -lkernel32 -lgdi32
